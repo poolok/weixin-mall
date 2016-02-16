@@ -190,7 +190,7 @@
                     <span class="am-navbar-label">呼叫</span>
                 </a>
             </li>
-            <li data-am-navbar-share>
+            <li>
                 <a href="###" class="">
                     <img src="http://amazeui.b0.upaiyun.com/assets/i/cpts/navbar/share.png" alt="分享"/>
                     <span class="am-navbar-label">分享</span>
@@ -209,6 +209,26 @@
 <script src='../../static/assets/javascripts/jquery/jquery.min.js' type='text/javascript'></script>
 <!-- / amaze -->
 <script src='../../static/assets/javascripts/amaze/amazeui.js' type='text/javascript'></script>
+<script>
+    $(function() {
+        $('#doc-modal-list').find('.am-icon-close').add('#doc-confirm-toggle').
+                on('click', function() {
+                    $('#my-confirm').modal({
+                        relatedTarget: this,
+                        onConfirm: function(options) {
+                            var $link = $(this.relatedTarget).prev('a');
+                            var msg = $link.length ? '你要删除的链接 ID 为 ' + $link.data('id') :
+                                    '确定了，但不知道要整哪样';
+                            alert(msg);
+                        },
+                        // closeOnConfirm: false,
+                        onCancel: function() {
+                            alert('算求，不弄了');
+                        }
+                    });
+                });
+    });
+</script>
 </body>
 
 </html>
