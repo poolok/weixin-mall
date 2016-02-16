@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>商品详情</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="Cache-Control" content="no-store"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="-1"/>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'/>
+    <link href='../../static/assets/stylesheets/amaze/amazeui.css' media='all' rel='stylesheet' type='text/css'/>
+</head>
+<style>
+    body {
+        font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans","wenquanyi micro hei","Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+    }
+</style>
+<body>
+<!-- 顶部 -->
+<header data-am-widget="header"
+        class="am-header am-header-default am-header-fixed">
+    <div class="am-header-left am-header-nav">
+        <a href="#left-link" id="left-link">
+              <span class="am-header-nav-title">
+                返回
+              </span>
+            <i class="am-header-icon am-icon-backward"></i>
+        </a>
+    </div>
+
+    <h1 class="am-header-title">
+        xxx海购商城
+    </h1>
+
+    <div class="am-header-right am-header-nav">
+        <a href="#right-link" class="">
+              <span class="am-header-nav-title">
+                菜单
+              </span>
+            <i class="am-header-icon am-icon-bars"></i>
+        </a>
+    </div>
+</header>
+
+<!-- 滚动广告图片 -->
+<div>
+    <div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
+        <ul class="am-slides">
+            <li><img src="http://res.vmallres.com/pimages//product/101100101239/15/428_428_0.jpg" /></li>
+            <li><img src="http://res.vmallres.com/pimages//product/101100101239/23//group/800_800_1450055529123.jpg" /></li>
+        </ul>
+    </div>
+</div>
+
+
+<!--回到顶部-->
+<div data-am-widget="gotop" class="am-gotop am-gotop-fixed" >
+    <a href="#top" title="">
+        <img class="am-gotop-icon-custom" src="http://amazeui.b0.upaiyun.com/assets/i/cpts/gotop/goTop.gif" />
+    </a>
+</div>
+
+<style>
+    .am-btn-group button {
+        height: 49px;
+    }
+    .huanle{
+        position: relative;
+        top: -13px;
+        left: -9px;
+        /*徽标位置*/
+    }
+</style>
+<footer data-am-widget="navbar" class="am-navbar am-cf am-navbar-default">
+    <div class="am-btn-toolbar">
+        <div class="am-btn-group am-btn-group-xs am-btn-group-justify">
+            <button class="am-btn am-btn-default" type="button">
+                <i class="am-icon-star"></i>
+                收藏
+            </button>
+            <button class="am-btn am-btn-default" type="button" style="float: left;">
+                <i class="am-icon-shopping-cart"></i>
+                购物车
+                <span class="am-badge am-badge-danger am-round huanle">6</span>
+            </button>
+            <button class="am-btn am-btn-warning" type="button">
+                加入购物车
+            </button>
+            <button class="am-btn am-btn-danger" type="button">
+                立即购买
+            </button>
+        </div>
+    </div>
+</footer>
+
+<!-- 弹出框 -->
+<div class="am-modal am-modal-confirm" tabindex="-1" id="my-confirm">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd">Amaze UI</div>
+        <div class="am-modal-bd">
+            你，确定要删除这条记录吗？
+        </div>
+        <div class="am-modal-footer">
+            <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+            <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+        </div>
+    </div>
+</div>
+
+<!-- / jquery -->
+<script src='../../static/assets/javascripts/jquery/jquery.min.js' type='text/javascript'></script>
+<!-- / amaze -->
+<script src='../../static/assets/javascripts/amaze/amazeui.js' type='text/javascript'></script>
+<script>
+    $(function() {
+        $("#left-link").on("click", function(){
+            window.location.href = document.referrer;
+        });
+    });
+</script>
+</body>
+
+</html>

@@ -125,10 +125,10 @@
                 <div class="am-u-sm-8 am-list-main">
                     <div style="font-size: 10px;">
                         <span style="float: left;">
-                            <i class="am-icon-heart-o"></i> 100000人喜欢
+                            <i class="am-icon-heart-o"></i> <span style="color: #10a0ea;">100000</span>人喜欢
                         </span>
                         <span style="float: left; margin-left: 5%;">
-                            <i class="am-icon-industry"></i> 销量100000件
+                            <i class="am-icon-industry"></i> 销量<span style="color: #10a0ea;">100000</span>件
                         </span>
                     </div>
                 </div>
@@ -151,10 +151,10 @@
                 <div class="am-u-sm-8 am-list-main">
                     <div style="font-size: 10px;">
                         <span style="float: left;">
-                            <i class="am-icon-heart-o"></i> 100000人喜欢
+                            <i class="am-icon-heart-o"></i> <span style="color: #10a0ea;">100000</span>人喜欢
                         </span>
                         <span style="float: left; margin-left: 5%;">
-                            <i class="am-icon-industry"></i> 销量100000件
+                            <i class="am-icon-industry"></i> 销量<span style="color: #10a0ea;">100000</span>件
                         </span>
                     </div>
                 </div>
@@ -177,10 +177,10 @@
                 <div class="am-u-sm-8 am-list-main">
                     <div style="font-size: 10px;">
                         <span style="float: left;">
-                            <i class="am-icon-heart-o"></i> 100000人喜欢
+                            <i class="am-icon-heart-o"></i> <span style="color: #10a0ea;">100000</span>人喜欢
                         </span>
                         <span style="float: left; margin-left: 5%;">
-                            <i class="am-icon-industry"></i> 销量100000件
+                            <i class="am-icon-industry"></i> 销量<span style="color: #10a0ea;">100000</span>件
                         </span>
                     </div>
                 </div>
@@ -203,10 +203,10 @@
                 <div class="am-u-sm-8 am-list-main">
                     <div style="font-size: 10px;">
                         <span style="float: left;">
-                            <i class="am-icon-heart-o"></i> 100000人喜欢
+                            <i class="am-icon-heart-o"></i> <span style="color: #10a0ea;">100000</span>人喜欢
                         </span>
                         <span style="float: left; margin-left: 5%;">
-                            <i class="am-icon-industry"></i> 销量100000件
+                            <i class="am-icon-industry"></i> 销量<span style="color: #10a0ea;">100000</span>件
                         </span>
                     </div>
                 </div>
@@ -262,7 +262,7 @@
 </style>
 <footer data-am-widget="navbar" class="am-navbar am-cf am-navbar-default">
     <div class="am-btn-toolbar">
-        <div class="am-btn-group am-btn-group-sm am-btn-group-justify">
+        <div class="am-btn-group am-btn-group-xs am-btn-group-justify">
             <button class="am-btn am-btn-primary" type="button">
                 <i class="am-icon-reorder"></i>
                 分类
@@ -303,8 +303,7 @@
 <script src='../../static/assets/javascripts/amaze/amazeui.js' type='text/javascript'></script>
 <script>
     $(function() {
-        $('.box').
-                on('click', function() {
+        $('.box').on('click', function() {
                     $('#my-confirm').modal({
                         relatedTarget: this,
                         onConfirm: function(options) {
@@ -319,6 +318,9 @@
                         }
                     });
                 });
+        $(".am-list").find("li").on("click", function(){
+            window.location.href= "mall_goods.html";
+        });
     });
 </script>
 </body>
