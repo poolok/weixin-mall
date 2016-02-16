@@ -48,14 +48,61 @@
 <div>
     <div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
         <ul class="am-slides">
-            <li><img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" /></li>
-            <li><img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" /></li>
+            <li><img src="http://img1.imgtn.bdimg.com/it/u=913702183,3815854924&fm=21&gp=0.jpg" /></li>
+            <li><img src="http://pic.58pic.com/58pic/14/36/28/16Q58PICnjx_1024.jpg" /></li>
         </ul>
     </div>
 </div>
 
 <!-- 九宫格 板块 -->
+<style>
+    .boxes {
+        width: 100%;
+    }
 
+    .boxes .box {
+        height: 100px;
+        width: 25%;
+        color: #eee;
+        line-height: 100px;
+        text-align: center;
+        font-weight: bold;
+        transition: all .2s ease;
+    }
+
+    .boxes .box:hover {
+        font-size: 100%;
+        transform: rotate(360deg);
+    }
+
+    .box-1 {
+        background-image: url("https://www.juhe.cn/themes/v4/public/images/juheyellow.png");
+        background-color: #ffffff;
+    }
+
+    .box-2 {
+        background-image: url("http://img5.imgtn.bdimg.com/it/u=1603116866,4080342463&fm=21&gp=0.jpg");
+        background-color: #ffffff;
+    }
+
+    .box-3 {
+        background-image: url("http://img1.imgtn.bdimg.com/it/u=2031586073,291994370&fm=21&gp=0.jpg");
+        background-color: #ffffff;
+    }
+
+    .box-4 {
+        background-image: url("");
+        background-color: #008000;
+    }
+</style>
+<div>
+    <ul class="am-avg-sm boxes">
+        <li class="box box-1">热门产品<i class=am-icon-angellist"></i></li>
+        <li class="box box-2">热门品牌</li>
+        <li class="box box-3">新品上市</li>
+        <li class="box box-4">最新活动</li>
+    </ul>
+</div>
 <!-- 首页推荐商品 -->
 <div data-am-widget="list_news" class="am-list-news am-list-news-default" >
 
@@ -169,49 +216,94 @@
 </div>
 
 <!--回到顶部-->
-<div id="amz-toolbar" class="amz-toolbar" style="float: right;">
-    <a id="amz-go-top" class="am-icon-btn am-icon-arrow-up am-active" style="margin-bottom: 100px;" title="回到顶部" href="#top"></a>
+<div data-am-widget="gotop" class="am-gotop am-gotop-fixed" >
+    <a href="#top" title="">
+        <img class="am-gotop-icon-custom" src="http://amazeui.b0.upaiyun.com/assets/i/cpts/gotop/goTop.gif" />
+    </a>
 </div>
 
-<!-- 页脚 操作按钮 -->
+<!-- 页脚 操作按钮
 <footer>
     <div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default "
          id="">
         <ul class="am-navbar-nav am-cf am-avg-sm-4">
             <li >
                 <a href="###" class="">
-                    <img src="http://amazeui.b0.upaiyun.com/assets/i/cpts/navbar/Information.png" alt="消息"/>
-                    <span class="am-navbar-label">消息</span>
+                    <i class="am-icon-btn am-progress-bar"></i>
+                    <span class="am-navbar-label">分类</span>
                 </a>
             </li>
             <li >
                 <a href="###" class="">
                     <img src="http://amazeui.b0.upaiyun.com/assets/i/cpts/navbar/phone.png" alt="呼叫"/>
-                    <span class="am-navbar-label">呼叫</span>
+                    <span class="am-navbar-label">搜索</span>
                 </a>
             </li>
             <li>
                 <a href="###" class="">
                     <img src="http://amazeui.b0.upaiyun.com/assets/i/cpts/navbar/share.png" alt="分享"/>
-                    <span class="am-navbar-label">分享</span>
+                    <span class="am-navbar-label">购物车</span>
                 </a>
             </li>
             <li >
                 <a href="#" class="">
                     <img src="http://amazeui.b0.upaiyun.com/assets/i/cpts/navbar/map.png" alt="地图"/>
-                    <span class="am-navbar-label">地图</span>
+                    <span class="am-navbar-label">用户</span>
                 </a>
             </li>
         </ul>
     </div>
 </footer>
+ -->
+<style>
+    .am-btn-group button {
+        height: 49px;
+    }
+</style>
+<footer data-am-widget="navbar" class="am-navbar am-cf am-navbar-default">
+    <div class="am-btn-toolbar">
+        <div class="am-btn-group am-btn-group-sm am-btn-group-justify">
+            <button class="am-btn am-btn-primary" type="button">
+                <i class="am-icon-reorder"></i>
+                分类
+            </button>
+            <button class="am-btn am-btn-primary" type="button">
+                <i class="am-icon-search"></i>
+                搜索
+            </button>
+            <button class="am-btn am-btn-primary" type="button">
+                <i class="am-icon-shopping-cart"></i>
+                购物车
+            </button>
+            <button class="am-btn am-btn-primary" type="button">
+                <i class="am-icon-user"></i>
+                用户
+            </button>
+        </div>
+    </div>
+</footer>
+
+<!-- 弹出框 -->
+<div class="am-modal am-modal-confirm" tabindex="-1" id="my-confirm">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd">Amaze UI</div>
+        <div class="am-modal-bd">
+            你，确定要删除这条记录吗？
+        </div>
+        <div class="am-modal-footer">
+            <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+            <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+        </div>
+    </div>
+</div>
+
 <!-- / jquery -->
 <script src='../../static/assets/javascripts/jquery/jquery.min.js' type='text/javascript'></script>
 <!-- / amaze -->
 <script src='../../static/assets/javascripts/amaze/amazeui.js' type='text/javascript'></script>
 <script>
     $(function() {
-        $('#doc-modal-list').find('.am-icon-close').add('#doc-confirm-toggle').
+        $('.box').
                 on('click', function() {
                     $('#my-confirm').modal({
                         relatedTarget: this,
