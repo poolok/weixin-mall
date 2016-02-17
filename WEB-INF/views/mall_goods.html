@@ -43,7 +43,7 @@
     </div>
 </header>
 
-<!-- 滚动广告图片 -->
+<!-- 滚动商品图片 -->
 <div>
     <div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
         <ul class="am-slides">
@@ -53,6 +53,85 @@
     </div>
 </div>
 
+<!-- 价格等说明区 -->
+<div class="am-container">
+    <div class="am-g">
+        <div class="am-u-sm-12">
+            <span style="font-size: 15px; font-weight: bold;">
+                荣耀7 双卡双待双通 移动4G版 16GB存储（冰河银）超值套餐
+            </span>
+        </div>
+        <div class="am-u-sm-5" style="float: left;">
+            <span style="color: #F37B1D; font-size: 14px; font-weight: bold;">
+                现价: ¥ 1799.00
+            </span>
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-u-sm-6">
+            <span style="text-decoration: line-through; font-size: 12px; font-weight: bold;">原价: ¥ 1999.00</span>
+        </div>
+        <div class="am-u-sm-6">
+            <span style="font-size: 12px; font-weight: bold;">可获积分: 2500</span>
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-u-sm-6">
+            <span style="font-size: 12px; font-weight: bold;">库存: 9999</span>
+        </div>
+        <div class="am-u-sm-6">
+            <span style="font-size: 12px; font-weight: bold;">销量: 999999</span>
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-u-sm-12">
+            <span style="font-size: 12px; font-weight: bold;">运费: ¥ 15 (买两件以上包邮)</span>
+        </div>
+    </div>
+    <div class="am-g">
+        <div class="am-u-sm-12">
+            <button class="am-btn am-btn-xs am-btn-default am-btn-block">选择：网络类型/机身颜色/套餐类型/机身内存</button>
+        </div>
+    </div>
+</div>
+
+<!-- 主内容区 -->
+<div class="am-container" style="margin-top: 5%;">
+    <div class="am-tabs" id="doc-my-tabs">
+        <ul class="am-tabs-nav am-nav am-nav-tabs am-nav-justify" style="font-size: 10px;font-weight: bold;">
+            <li class="am-active"><a href="">商品详情</a></li>
+            <li><a href="">商品参数</a></li>
+            <li><a href="">评价(21238)</a></li>
+        </ul>
+        <div class="am-tabs-bd">
+            <div class="am-tab-panel am-active">
+                <div class="am-g">
+                    <div class="am-u-sm-12">
+                        <p><img src="http://res.vmallres.com/pimages//product/10110010123902/details/20160215111640351.jpg"
+                             title="rongyao7.jpg" class="am-img-responsive"><br></p>
+                        <p><img
+                                src="http://res.vmallres.com/pimages//product/10110010123902/details/20160215111648273.jpg"
+                                title="cj.jpg" class="am-img-responsive"><br></p>
+                        <p><img title="荣耀7镭雕版750xN.jpg" class="am-img-responsive"
+                                src="http://res.vmallres.com/pimages//temp/product/20151010101033449.jpg"><br>
+                        </p>
+
+                        <p><img src="http://res.vmallres.com/pimages//temp/product/20160107153421909.jpg" style="float:none;"
+                                title="honor7全网通版1_01.jpg" class="am-img-responsive"></p>
+
+                        <p><img src="http://res.vmallres.com/pimages//temp/product/20160107153422210.jpg" style="float:none;"
+                                title="honor7全网通版1_02.jpg" class="am-img-responsive"></p>
+
+                        <p><img src="http://res.vmallres.com/pimages//temp/product/20160107153422559.jpg" style="float:none;"
+                                title="honor7全网通版1_03.jpg" class="am-img-responsive"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="am-tab-panel">...</div>
+            <div class="am-tab-panel">...</div>
+        </div>
+    </div>
+</div>
 
 <!--回到顶部-->
 <div data-am-widget="gotop" class="am-gotop am-gotop-fixed" >
@@ -114,6 +193,9 @@
 <script src='../../static/assets/javascripts/amaze/amazeui.js' type='text/javascript'></script>
 <script>
     $(function() {
+
+        $('#doc-my-tabs').tabs();
+
         $("#left-link").on("click", function(){
             window.location.href = document.referrer;
         });
